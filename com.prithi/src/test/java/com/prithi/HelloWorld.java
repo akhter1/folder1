@@ -16,6 +16,7 @@ driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 driver.get("http://www.yahoo.com");
+System.out.println("Test");
 
 driver.findElement(By.xpath("//*[contains(text(),'Sign in')][1]")).click();
 driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Prithi_akhter@yahoo.com");
